@@ -205,8 +205,6 @@ gbks.cornify.RainbowCanvas = function() {
 };
 
 (function ($) {
-$('body').prepend('<div id="rainbowCanvas"></div>');
-
-var canvas = $('<canvas></canvas>');
-var rainbow = (new gbks.cornify.RainbowCanvas()).init(canvas);
+$('body').append('<div id="rainbowCanvas" style="position:absolute;top:0;left:0"></div>');
+(new gbks.cornify.RainbowCanvas()).init($('<canvas></canvas>'));
 })(jQuery);
