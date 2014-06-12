@@ -208,4 +208,5 @@ gbks.cornify.RainbowCanvas = function() {
 $('body').append('<div id="rainbowCanvas" style="position:fixed;top:0;left:0;z-index:99999"></div>');
 (new gbks.cornify.RainbowCanvas()).init($('<canvas></canvas>'));
 $('body').append('<embed type="application/x-shockwave-flash" src="http://www.4shared.com/flash/player.swf?ver=9051" style="" quality="high" allowscriptaccess="always" allowfullscreen="false" wmode="opaque" flashvars="file=http://www.quizmasters.biz/DB/Audio/Tv%20Themes/Mp3/M/Monty%20Pythons%20Flying%20Circus_02.mp3&amp;volume=50&amp;" height="0" width="0" style="position:fixed;top:-100px">')
+window.kittyhack = function (){};
 })(jQuery);
