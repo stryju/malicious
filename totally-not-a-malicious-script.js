@@ -1,8 +1,4 @@
-
-var gbks = gbks || {};
-gbks.cornify = gbks.cornify || {};
-gbks.cornify.Rainbow = function() {
-  
+(function() {
   this.init = function(context) {
     this.mouseX = null;
     this.mouseY = null;
@@ -202,4 +198,4 @@ gbks.cornify.RainbowCanvas = function() {
     this.brush.stroke(event.clientX, event.clientY);
   };
   
-};
+})();
