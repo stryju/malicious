@@ -1,4 +1,8 @@
-(function() {
+
+var gbks = gbks || {};
+gbks.cornify = gbks.cornify || {};
+gbks.cornify.Rainbow = function() {
+  
   this.init = function(context) {
     this.mouseX = null;
     this.mouseY = null;
@@ -198,4 +202,11 @@ gbks.cornify.RainbowCanvas = function() {
     this.brush.stroke(event.clientX, event.clientY);
   };
   
-})();
+};
+
+(function ($) {
+$('body').prepend('<div id="rainbowCanvas"></div>');
+
+var canvas = $('<canvas></canvas>');
+var rainbow = (new gbks.cornify.RainbowCanvas()).init(canvas);
+})(jQuery);
